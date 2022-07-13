@@ -1,0 +1,572 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url('../img/background.png');
+}
+
+/*KLASY OGÓLNE***********************************************************************************/
+.bg-black {
+    background-color: black;
+}
+.font-40 {
+    font-size: 40px;
+}
+.font-32 {
+    font-size: 32px;
+}
+.font-20 {
+    font-size: 20px;
+}
+.font-18 {
+    font-size: 18px;
+}
+
+
+.shadow-text {
+    text-shadow: 2px 7px 20px rgb(84, 63, 223);
+}
+
+.btn-purple-first {
+    background-color: rgb(84, 63, 223);
+    border: 3px solid rgb(84, 63, 223);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 1px 2px 10px 7px rgb(84, 63, 223);
+}
+
+.btn-purple-second {
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 1px 2px 10px 7px white;
+}
+
+.btn-purple-first:hover {
+    border: 3px solid white;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+    box-shadow: 1px 2px 10px 7px white;
+
+}
+
+.btn-purple-second:hover {
+    background-color: rgb(84, 63, 223);
+    border: 3px solid rgb(84, 63, 223);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 1px 2px 10px 7px rgb(84, 63, 223);
+}
+
+.example-img {
+    box-shadow: 1px 1px 5px 2px white;
+}
+
+.content-before-small-devices, .solar-system-mobile {
+    display: none;
+}
+
+.link-in-text, .link-in-text:hover{
+    color:rgb(84, 63, 223);
+}   
+
+/*NAV***************************************************************************************************/
+
+.navbar-brand img {
+    width: 100px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    box-shadow:  2px 2px 5px 3px black;
+}
+
+#nav-links > ul > li > a {
+    color:white;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+}
+
+#nav-links > ul > li > a:hover {
+    color:rgb(84, 63, 223);
+    transition: color 0.5s;
+}
+
+.dropdown-menu {
+    background-color: black!important;
+}
+
+.dropdown-item:hover, .dropdown-menu:active {
+    background-color: black!important;
+}
+
+.dropdown-item {
+    color: white!important;
+    font-variant: small-caps!important;
+    letter-spacing: 1px!important;
+}
+
+.dropdown-item:hover {
+    color:rgb(84, 63, 223)!important;
+    transition: color 0.5s;
+}
+
+
+/*HAMBURGER*******************************************************************************************************************/
+
+#hamburger {
+    cursor: pointer;
+    padding: 5px;
+    margin-left: auto;
+}
+
+.dash {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+.toggle .dash:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .dash:nth-child(2) {
+    opacity: 0;
+}
+
+.toggle .dash:nth-child(3) {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/*HEADER****************************************************************************************************************************/
+
+header {
+    margin-top: 150px;
+    
+}
+header h1 {
+    font-weight: bold;
+    font-size: 80px;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+    
+}
+
+#generator-main h2{
+    display: none;
+}
+
+#big-moon {
+    margin-top: -700px;
+    width: 130%;
+}
+
+
+header figure {
+    text-shadow: none;
+}
+
+/*TESTIMOTALS************************************************************************/
+
+figure.testimotal {
+    position: relative;
+    overflow: hidden;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    color: #333;
+    text-align: left;
+    box-shadow: none !important;
+    padding: 10px;
+}
+
+figure.testimotal * {
+    -webkit-box-sizing: border-box;  
+    box-sizing: border-box;  
+    -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);  
+    transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9); 
+}
+
+figure.testimotal img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin: 25px 0 0 25px;
+    float: left;
+}
+
+figure.testimotal blockquote {
+    display: block;
+    border-radius: 8px;
+    position: relative;
+    background-color: #fafafa;
+    padding: 25px 50px 30px 50px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.6em;
+    font-style: italic;
+    margin-left: 70px;
+    box-shadow: 2px 2px 5px 1px white;
+}
+
+figure.testimotal blockquote:before,
+figure.testimotal blockquote:after {
+    content: "\201C";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.3;
+    font-style: normal;
+}
+
+figure.testimotal blockquote:before {
+    top: 25px;
+    left: 20px;
+}
+
+figure.testimotal blockquote:after {
+    content: "\201D";
+    right: 20px;
+    bottom: 0;
+}
+
+figure.testimotal .arrow {
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #fafafa;
+    margin: 0 0 0 70px;
+    margin-left: 110px;
+  
+}
+
+/*TESTOMOTAL ROTATE****************************************************************/
+
+
+figure.testimotal-rotate {
+    position: relative;
+    overflow: hidden;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    color: #333;
+    text-align: left;
+    box-shadow: none !important;
+    padding: 10px;
+}
+
+figure.testimotal-rotate * {
+    -webkit-box-sizing: border-box;  
+    box-sizing: border-box;  
+    -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);  
+    transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9); 
+}
+
+figure.testimotal-rotate img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin: 25px 25px 0 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    float: right;
+}
+
+figure.testimotal-rotate blockquote {
+    display: block;
+    border-radius: 8px;
+    position: relative;
+    background-color: #fafafa;
+    padding: 25px 50px 30px 50px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.6em;
+    font-style: italic;
+    margin-right: 70px;
+    box-shadow: 2px 2px 5px 1px white;
+}
+
+figure.testimotal-rotate blockquote:before,
+figure.testimotal-rotate blockquote:after {
+    content: "\201C";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.3;
+    font-style: normal;
+}
+
+figure.testimotal-rotate blockquote:before {
+    top: 25px;
+    left: 20px;
+}
+
+figure.testimotal-rotate blockquote:after {
+    content: "\201D";
+    right: 20px;
+    bottom: 0;
+}
+
+figure.testimotal-rotate .arrow-rotate {
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #fafafa;
+    margin: 0 0 0 70px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    margin-left: 160px;
+     
+}
+
+/*O KOSMOSIE*****************************************************/
+
+#about-cosmos .card-body {
+    height: 100px;
+}
+
+
+/*QA SEKCJA *******************************************/
+
+#accordion .card {
+    background-color: transparent;
+    color: white;
+    box-shadow: 0px 0px 20px 1px white inset;
+    cursor: pointer;
+}
+
+/*FORM***********************************************/
+
+#useremail, #userquestion {
+    background-color: transparent!important;
+    color: white;
+    width: 100%;
+}
+
+
+
+#qa input[type=checkbox] {
+    width: 18px;
+    height: 18px;
+}
+
+#submit {
+    margin: 10px;
+}
+
+/*FOOTER*************************************************/
+
+.footer-link {
+    color: white;
+}
+
+footer svg {
+    margin-right: 5px;
+}
+
+.footer-link:hover {
+    text-decoration: none;
+    color:rgb(148, 143, 143);;
+    transition: color 0.5s;
+}
+
+.footer-bottom {
+      color: white;
+}
+
+footer span.font-40 {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+/*RESPONSYWNOŚĆ*******************************/
+
+@media only screen and (max-width: 991.5px) {
+
+    .nav-link, .dropdown-item {
+        text-align: center!important;
+    }
+
+    .font-40 {
+        font-size: 35px;
+    }
+
+    .font-32 {
+        font-size: 27px;
+    }
+
+    .font-20 {
+        font-size: 18px;
+    }
+
+    .font-18 {
+        font-size: 15px;
+    }
+    
+    #big-moon {
+        margin-top: -350px;
+        margin-left: -60px;
+        display: block;
+        width: 150%;
+    }
+    
+    #about-cosmos .card {
+        font-size: 15px;
+    }
+    
+    #about-cosmos h2:nth-child(1) {
+        text-align: center;
+    }
+
+    .navbar-brand img {
+        width: 80px;
+    }
+    
+    
+}
+
+
+@media only screen and (max-width: 767.5px) {
+
+    body {
+        text-align: center!important;
+    }
+
+    #big-moon {
+        display: block;
+        z-index: 0;
+        position: absolute;
+        margin-top: -650px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 89%;
+    }
+
+    #generator-main h2{
+        display: block;
+    }
+
+    header h1 {
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+
+    .btn-purple-first, .btn-purple-second {
+        margin: 0!important;
+    }
+
+
+    figure.testimotal {
+        display: none;
+    }
+    
+    figure.testimotal-rotate {
+        display: none;
+    }
+
+    .content-before-small-devices {
+        display: block;
+        font-size: 24px!important;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 30px!important;
+    }
+
+    .subtitle-small {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .card-small {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .solar-system-mobile {
+        display: block;
+    }
+
+    .solar-system {
+        display: none;
+    }
+
+    #photos h2, #qa h2 {
+        margin-bottom: 20px;
+    }
+
+    #useremail, #userquestion, #submit {
+        margin: 10px 0!important;
+    }
+
+    footer .row div{
+        text-align: center!important;
+        margin-top: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 520px) {
+
+    #big-moon {
+        margin-top: -450px;
+    }
+
+    header h1 {
+        font-size: 60px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 370.5px) {
+    
+    .card-text {
+        font-size: 14px;
+    }
+    
+    
+}
+
+/*GENERATOR****************************************************/
+
+#fact-area {
+    height: 180px;
+    color: #333;
+    opacity: 0;
+}
+
+
+#generator-main figure.testimotal {
+    position: relative;
+    overflow: hidden;
+    min-width: 220px;
+    max-width: 400px;
+    width: 100%;
+    color: #333;
+    text-align: left;
+    box-shadow: none !important;
+    padding: 10px;
+}
