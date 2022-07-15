@@ -7,17 +7,17 @@ $(document).ready(function () {
 
   //FUNKCJA ZMIENIAJĄCA TEKST W DIVIE contentMoreAbout
   function moreAboutUs() {
-    const teksty = {
-      tekstJakDzialamy:
+    const texts = {
+      textHowWeWork:
         '<p class="pMoreAbout">Na początku kontaktujemy się z naszym klientem w celu ustalenia wyglądu witryny</p><p class="pMoreAbout">Następnie sporządzamy listę wtyczek i specyfikacji które przyśpieszą naszą pracę. </p><p class="pMoreAbout">Wdrażamy projekt w życie, po czym konsultujemy efekt końcowy z klientem.</p>',
-      tekstOferta:
+      textOffer:
         '<p class="pMoreAbout">Oferujemy strony internetowe które będą przede wszystkim:<ul><li>W dobrej cenie</li><li>Responsywne, tzn. będą dostosowane do urządzeń każdego typu</li><li>Posiadały metodologię SEO</li></ul></p>',
-      tekstGodziny:
+      textWorkHours:
         '<p class="pMoreAbout">Godziny otwarcia:<ul><li>Pon - Pt<ul><li>10:00 - 20:00</li></ul></li><li>Sobota<ul><li>10:00 - 18:00</li></ul></li></ul></p>',
     };
 
     $('#divMore1').click(function () {
-      $('#contentMoreAbout').html(teksty.tekstJakDzialamy);
+      $('#contentMoreAbout').html(texts.textHowWeWork);
 
       $('#divMore1').css({
         'background-color': 'rgb(240, 3, 252)',
@@ -31,7 +31,7 @@ $(document).ready(function () {
     });
 
     $('#divMore2').click(function () {
-      $('#contentMoreAbout').html(teksty.tekstOferta);
+      $('#contentMoreAbout').html(texts.textOffer);
 
       $('#divMore2').css({
         'background-color': 'rgb(240, 3, 252)',
@@ -45,7 +45,7 @@ $(document).ready(function () {
     });
 
     $('#divMore3').click(function () {
-      $('#contentMoreAbout').html(teksty.tekstGodziny);
+      $('#contentMoreAbout').html(texts.textWorkHours);
 
       $('#divMore3').css({
         'background-color': 'rgb(240, 3, 252)',
