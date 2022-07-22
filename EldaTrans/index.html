@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -34,50 +34,60 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="./assets/img/logo-shadow.png" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <div class="dash"></div>
-          <div class="dash"></div>
-          <div class="dash"></div>
-        </button>
-        <div
-          class="collapse navbar-collapse underline-animation"
-          id="navbarText"
-        >
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Strona główna</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Plan przejazdów</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">O firmie</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Kontakt</a>
-            </li>
-          </ul>
-          <span class="navbar-text"> Z nami dojedziesz, tam gdzie chcesz </span>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#gallery">Strona główna</a></li>
+          <li><a href="#contact">O firmie</a></li>
+        </ul>
+        <h1 class="logo">Elda-Trans</h1>
+        <ul class="nav-links">
+          <li><a href="#gallery">Plan przejazdów</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
+      </nav>
+      <div class="content">
+        <h2>Przewóz osób</h2>
+        <h3>Polska - Francja - Hiszpania</h3>
+        <button class="btn-fill">Dowiedz się więcej</button>
       </div>
-    </nav>
-    <header></header>
-    <div>
-      <p>adsad</p>
-    </div>
+    </header>
+    <main>
+      <section id="about-us" class="container py-5 about-us">
+        <h2>O NAS</h2>
+        <div class="underline"></div>
+        <div class="row">
+          <div class="col-lg-6">
+            <p>
+              Nasza firma zajmuje się międzynarodowym przewozem osób pomiędzy
+              POLSKĄ, FRANCJĄ i HISZPANIĄ. Naszym klientom zapewniamy bezpieczną
+              podróż, komfortowe warunki jazdy oraz bezkonkurencyjne ceny.
+              Atutem naszej firmy są kierowcy posiadający wieloletnie
+              doświadczenie i odpowiednie kwalifikacje w przewozie osób i
+              towarów. Dzięki ich umiejętnościom, dobrej znajomości tras i
+              niezawodnym busom Nasi klienci docierają pod wskazany adres szybko
+              i bezpiecznie. Posiadamy wszelkie niezbędne uprawnienia na
+              prowadzenie działalności, w tym certyfikat kompetencji zawodowych
+              oraz licencję na międzynarodowy przewóz osób. Szczegółowe
+              informacje dotyczące przejazdów znajdziecie Państwo w zakładce
+              Plan przejazdów.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="https://images.pexels.com/photos/1178448/pexels-photo-1178448.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -93,5 +103,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/scripts/script.js"></script>
   </body>
 </html>

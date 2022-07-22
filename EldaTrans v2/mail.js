@@ -1,29 +1,30 @@
 const form = document.querySelector('form');
 const statusTxt = form.querySelector('#status');
+
 form.onsubmit = e => {
   e.preventDefault();
-  statusTxt.style.color = '#0D6EFD';
+  statusTxt.style.color = 'rgb(250, 175, 64)';
   statusTxt.style.display = 'block';
   statusTxt.innerText = 'Wysyłanie wiadomości...';
   form.classList.add('disabled');
 
   let xhr = new XMLHttpRequest();
   xhr.open('POST', 'mail.php', true);
+
   xhr.onload = () => {
     if (xhr.readyState == 4 && xhr.status == 200) {
       let response = xhr.response;
       if (
-        response.indexOf('Wymagane jest podanie adresu e-mail!') != -1 ||
-        response.indexOf('Wpisz poprawny adres e-mail!') != -1 ||
-        response.indexOf('Wymagane jest podanie treści wiadomości!') != -1 ||
-        response.indexOf('Musisz zapoznać się z naszą polityką prywatności!') !=
-          -1 ||
-        response.indexOf('Przykro nam, ale coś poszło nie tak...') != -1
+        response.indexOf('Prosimy podać swoje imię') != -1 ||
+        response.indexOf('Prosimy podać swój adres email') != -1 ||
+        response.indexOf('Adres email jest nieprawidłowy') != -1 ||
+        response.indexOf('Prosimy podać treść wiadomości') != -1 ||
+        response.indexOf('Nie udało się wysłać wiadomości') != -1
       ) {
         statusTxt.style.color = 'red';
       } else {
         form.reset();
-        statusTxt.style.color = 'lightgreen';
+        statusTxt.style.color = 'green';
         setTimeout(() => {
           statusTxt.style.display = 'none';
         }, 3000);

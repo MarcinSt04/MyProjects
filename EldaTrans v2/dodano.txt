@@ -1,0 +1,4 @@
+1.
+body - data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="60"
+
+jeżeli scrollspy nie działa to usun tą linijke a następnie odkomentuj skrypty w pliku script.js
