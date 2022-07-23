@@ -323,7 +323,7 @@ footer .row {
   }
 
   nav a.nav-link {
-    margin: 7vh auto;
+    margin: 5vh auto; /*OR 7VH AUTO*/
   }
 
   .burger div {
@@ -334,7 +334,7 @@ footer .row {
     margin: 7vh 0;
   }
   .navbar-nav {
-    height: 100vh;
+    height: calc(100vh - 60px); /*OR 100VH*/
   }
 
   .toggle .dash1 {
@@ -378,11 +378,3 @@ footer .row {
     font-size: 3.5rem;
   }
 }
-
-/* @media screen and (min-height: 720px) {
-  section {
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center !important;
-  }
-} */

@@ -9,12 +9,14 @@ if(!empty($name)) {
         if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
             if(!empty($message)) {
-                $receiver = "test@test-domena.pl";
-                $subject = "Nowa wiadomość od: $name <$email>";
+                $receiver = "2004marcin.stepien@gmail.com";
+                $subject = "[Elda-Trans] Nowa wiadomość od: $name";
                 $body = "$message";
-                $sender = "Od: $email";
+                $header = "From: $email \nContent-Type:".
+                ' text/plain;charset="UTF-8"'.
+                "\nContent-Transfer-Encoding: 8bit";
 
-                if(mail($receiver,$subject,$body,$sender)) {
+                if(mail($receiver,$subject,$body,$header)) {
                     echo "Wiadomość została wysłana poprawnie";
                 } else {
                     echo "Nie udało się wysłać wiadomości";
