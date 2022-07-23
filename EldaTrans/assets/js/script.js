@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', () => {
       burger.classList.remove('toggle');
       document.querySelector('.collapse').classList.remove('show');
+      setTimeout(() => {
+        removeHash();
+      }, 1);
       // removeActive();
       // link.classList.add('active'); SCROLLSPY ALTERNATIVE
     });
@@ -23,6 +26,12 @@ document.addEventListener('DOMContentLoaded', () => {
   //   removeActive();
   //   document.querySelector('a:nth-child(2)').classList.add('active');
   // }); SCROLLSPY ALTERNATIVE
+
+  document.querySelector('#explore').addEventListener('click', () => {
+    setTimeout(() => {
+      removeHash();
+    }, 1);
+  }); //button "POZNAJ NAS"
 
   /*PASTING FOOTER YEAR FUNCTION*/
   const footerDate = () => {
@@ -52,6 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
     links.forEach(link => {
       link.classList.remove('active');
     });
+  };
+
+  const removeHash = () => {
+    //remove # from url
+    window.history.replaceState({}, document.title, '/');
   };
 
   /*CALLING FUNCTIONS*/
