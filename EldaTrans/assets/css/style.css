@@ -281,7 +281,7 @@ header .hero-text h2 {
 footer {
   background: var(--dark-blue);
   min-height: calc(100vh - 60px);
-  color: white;
+  color: var(--white-color);
 }
 
 .footer-info span {
