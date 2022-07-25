@@ -9,7 +9,7 @@ if(!empty($name)) {
         if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
             if(!empty($message)) {
-                $receiver = "2004marcin.stepien@gmail.com";
+                $receiver = "kaniadamian634@gmail.com";
                 $subject = "[Elda-Trans] Nowa wiadomość od: $name";
                 $body = "$message";
                 $header = "From: $email \nContent-Type:".

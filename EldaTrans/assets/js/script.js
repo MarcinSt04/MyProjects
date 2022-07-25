@@ -57,11 +57,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /*NAVLINK ACTIVE CLASS REMOVE FUNCTION*/
 
-  const removeActive = () => {
-    links.forEach(link => {
-      link.classList.remove('active');
-    });
-  };
+  // const removeActive = () => {
+  //   links.forEach(link => {
+  //     link.classList.remove('active');
+  //   });
+  // };
 
   const removeHash = () => {
     //remove # from url
