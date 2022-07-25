@@ -308,8 +308,9 @@ footer .row {
   margin-top: 80px;
 }
 
-.footer-data {
-  padding-top: 3rem;
+.footer-info p {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 /*MEDIA QUERY*/
