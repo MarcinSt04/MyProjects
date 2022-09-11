@@ -16,16 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         removeHash();
       }, 1);
-      // removeActive();
-      // link.classList.add('active'); SCROLLSPY ALTERNATIVE
     });
   });
-
-  /*POZNAJ NAS BUTTON FUNCTION*/
-  // document.querySelector('#explore').addEventListener('click', () => {
-  //   removeActive();
-  //   document.querySelector('a:nth-child(2)').classList.add('active');
-  // }); SCROLLSPY ALTERNATIVE
 
   document.querySelector('#explore').addEventListener('click', () => {
     setTimeout(() => {
@@ -55,14 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.classList.remove('shadow-bg');
   }
 
-  /*NAVLINK ACTIVE CLASS REMOVE FUNCTION*/
-
-  // const removeActive = () => {
-  //   links.forEach(link => {
-  //     link.classList.remove('active');
-  //   });
-  // };
-
   const removeHash = () => {
     //remove # from url
     window.history.replaceState({}, document.title, '/');
@@ -71,18 +55,4 @@ document.addEventListener('DOMContentLoaded', () => {
   /*CALLING FUNCTIONS*/
   window.addEventListener('scroll', addBg);
   footerDate();
-
-  // window.addEventListener('scroll', () => {
-  //   console.log(window.scrollY);
-  //   if (window.scrollY < 662) {
-  //     removeActive();
-  //     document.querySelector('.nav-link').classList.add('link-active');
-  //   } else if (window.scrollY > 662 && window.scrollY < 1958) {
-  //     removeActive();
-  //     document.querySelector('a:nth-child(2)').classList.add('link-active');
-  //   } else if (window.scrollY > 1958) {
-  //     removeActive();
-  //     document.querySelector('a:nth-child(3)').classList.add('link-active');
-  //   }
-  // }); SCROLLSPY ALTERNATIVE
 });

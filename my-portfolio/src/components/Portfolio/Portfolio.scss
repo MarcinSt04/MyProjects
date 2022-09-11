@@ -1,0 +1,107 @@
+.portfolio {
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    .filtering {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        margin: 0 3px;
+      }
+    }
+
+    .portfolio-items {
+      margin-top: 60px;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      .portfolio-item {
+        position: relative;
+        margin: 0 10px;
+        max-width: 30%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 2px 8px -5px rgb(0, 0, 0 / 64%);
+        // margin-bottom: 30px;
+        border-radius: 2px;
+        cursor: pointer;
+
+        .portfolio-item-shadow {
+          position: absolute;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.8);
+          border-radius: 2px;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-size: 2.5rem;
+          opacity: 0;
+          transition: opacity 0.5s linear;
+          span {
+            padding: 5px 10px;
+          }
+        }
+        img {
+          width: 100%;
+          border-radius: 2px;
+        }
+
+        &:hover {
+          .portfolio-item-shadow {
+            opacity: 1;
+          }
+        }
+      }
+
+      .portfolio-item:first-child {
+        margin: 0 10px 0 0;
+      }
+
+      .portfolio-item:last-child {
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .portfolio {
+    .content {
+      .filtering {
+        flex-wrap: wrap;
+
+        button {
+          margin-top: 2rem;
+        }
+      }
+
+      .portfolio-items {
+        flex-direction: column;
+        align-items: center;
+
+        .portfolio-item:first-child {
+          margin: 2rem 0 0 0;
+        }
+
+        .portfolio-item:last-child {
+          margin: 2rem 0 0 0;
+        }
+
+        .portfolio-item {
+          max-width: 90%;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}

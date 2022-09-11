@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.content,
+.title {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 10rem;
+}
+
+section:nth-child(odd) {
+  .title {
+    text-align: right;
+    .underline {
+      margin-left: auto;
+    }
+  }
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+body {
+  color: rgb(0, 0, 5);
+}
+
+body,
+button {
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.9;
+}
+
+.underline {
+  width: 100px;
+  height: 4px;
+  background-color: rgb(10, 10, 95);
+  margin-bottom: 4rem;
+}
+
+.btn-fill {
+  background-color: rgb(10, 10, 95);
+  padding: 12px 24px;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn-empty {
+  background-color: #fafafa; //rgb(233, 233, 206);
+  padding: 12px 24px;
+  color: rgb(0, 0, 5);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 56%;
+  }
+
+  section {
+    padding: 10rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 45%;
+  }
+}
